@@ -57,4 +57,5 @@ class UserAddressTestCase(APITestCase):
         #print(response.data['Address updated']['address']['street']['name'] == 'thaya new street')
         #print('Response data', response.data)
         print('json: ', response.json())
+        assert response.status_code == status.HTTP_200_OK
 
